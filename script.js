@@ -60,7 +60,7 @@ document.querySelector(".bg-circle").style.backgroundColor = cores[0].cor;
 
 
 
-add();
+window.onload = add();
 
 
 
