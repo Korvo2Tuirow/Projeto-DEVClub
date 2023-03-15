@@ -180,6 +180,10 @@ button:hover{
 
 
 @media(max-width:1080px){
+
+    #conteudo{
+        margin: auto;
+    }
     
     .cel{
         display: flex;
@@ -264,6 +268,39 @@ button:hover{
     right: -450px;
     z-index: 0;
 }
+
+}
+
+@media(min-width: 1480px){
+
+    .cel img{
+        position: relative;
+        z-index: 5;
+        width: 600px;
+        height: 600px;
+    
+    }
+    
+    .bg-circle {
+        position: absolute;
+        width: 1200px;
+        height: 1200px;
+        border-radius: 50%;
+        background-color: #a7c4f0;
+        bottom: -600px;
+        right: -600px;
+        z-index: 0;
+    }
+
+
+}
+
+@media(max-width:548px){
+
+.btn-header{
+    display: none;
+}
+
 
 }
 /*
