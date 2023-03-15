@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    
+    
 
 }
 
 
 
 header {
+    
+    
     display: flex;
     width: 100%;
     height: 70px;
@@ -48,8 +51,10 @@ a {
 main {
 
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
+    
 
 }
 
@@ -62,8 +67,7 @@ section {
 }
 
 #conteudo {
-    position: absolute;
-    flex: 1;
+   
     width: auto;
     height: 100%;
     display: flex;
@@ -175,11 +179,100 @@ button:hover{
 }
 
 
-#imagens {
+@media(max-width:1080px){
+    
+    .cel{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .cel img{
+        display: flex;
+        width: 50%;
+        height: auto;
+       
+    }
+    
+}
+
+@media(min-width:1081px) and (max-width: 1409px){
+    *{
+        overflow: hidden;
+    }
+       
+    
+    .cel{
+        position: absolute;
+        right:0;
+        z-index: 8;
+        top: 50%;
+        bottom: 0;
+        
+    }
+
+    .cel img{
+        position: relative;
+        z-index: 5;
+        width: 400px;
+        height: 400px;
+    
+    }
+    
+    .bg-circle {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background-color: #a7c4f0;
+        bottom: -150px;
+        right: -150px;
+        z-index: 0;
+}
+}
+
+@media(min-width: 1410px){
+
+    *{
+        overflow: hidden;
+    }
+
+.cel{
+    position: absolute;
+    right:0;
+    z-index: 8;   
+    bottom: 0;
+    
+}
+
+.cel img{
     position: relative;
+    z-index: 5;
+    width: 500px;
+    height: 500px;
+
+}
+
+.bg-circle {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background-color: #a7c4f0;
+    bottom: -450px;
+    right: -450px;
+    z-index: 0;
+}
+
+}
+/*
+#imagens {
+    
     flex: 1;
     height: 100%;
     z-index: 2;
+    
 }
 
 .bg-circle {
@@ -190,14 +283,13 @@ button:hover{
     background-color: #a7c4f0;
     bottom: -600px;
     right: -500px;
+    overflow: hidden;
 
 }
 
 .cel {
-    position: absolute;
+    
     display: flex;
-    bottom: 0;
-    right: 0;
     z-index: 1;
     padding-bottom: 80px;
     justify-content: end;
@@ -210,3 +302,4 @@ button:hover{
     height: auto;
 }
 
+*/
